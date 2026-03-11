@@ -13,5 +13,5 @@ Sentry.init({
   tracesSampleRate: IS_PRODUCTION ? 0.2 : 1.0,
 
   // Capture all unhandled promise rejections
-  captureUnhandledRejections: true,
+  // captureUnhandledRejections: true,
 });
