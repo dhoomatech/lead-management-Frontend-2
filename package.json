@@ -1,0 +1,48 @@
+{
+  "name": "dhooma-crm",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "db:generate": "prisma generate",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "prisma studio"
+  },
+  "dependencies": {
+    "next": "14.2.15",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.4",
+    "lucide-react": "^0.439.0",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.5.2",
+    "@prisma/client": "^5.19.1",
+    "@sentry/nextjs": "^8.34.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.5",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.6.2",
+    "tailwindcss": "^3.4.11",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.15",
+    "prisma": "^5.19.1",
+    "tsx": "^4.19.0",
+    "vitest": "^2.1.1",
+    "@vitest/coverage-v8": "^2.1.1",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite-tsconfig-paths": "^5.0.1"
+  }
+}
